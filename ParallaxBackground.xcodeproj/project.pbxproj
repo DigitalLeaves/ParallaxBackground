@@ -14,28 +14,18 @@
 		66FEA87B185BB2FC00D094C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA879185BB2FC00D094C1 /* InfoPlist.strings */; };
 		66FEA87D185BB2FC00D094C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FEA87C185BB2FC00D094C1 /* main.m */; };
 		66FEA881185BB2FC00D094C1 /* PBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FEA880185BB2FC00D094C1 /* PBAppDelegate.m */; };
-		66FEA884185BB2FC00D094C1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA882185BB2FC00D094C1 /* Main_iPhone.storyboard */; };
-		66FEA887185BB2FC00D094C1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA885185BB2FC00D094C1 /* Main_iPad.storyboard */; };
 		66FEA88A185BB2FC00D094C1 /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FEA889185BB2FC00D094C1 /* PBViewController.m */; };
 		66FEA88D185BB2FC00D094C1 /* PBMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FEA88C185BB2FC00D094C1 /* PBMyScene.m */; };
-		66FEA88F185BB2FC00D094C1 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA88E185BB2FC00D094C1 /* Spaceship.png */; };
 		66FEA891185BB2FC00D094C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA890185BB2FC00D094C1 /* Images.xcassets */; };
-		66FEA898185BB2FC00D094C1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FEA897185BB2FC00D094C1 /* XCTest.framework */; };
-		66FEA899185BB2FC00D094C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FEA86E185BB2FC00D094C1 /* Foundation.framework */; };
-		66FEA89A185BB2FC00D094C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FEA872185BB2FC00D094C1 /* UIKit.framework */; };
-		66FEA8A2185BB2FC00D094C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8A0185BB2FC00D094C1 /* InfoPlist.strings */; };
-		66FEA8A4185BB2FC00D094C1 /* ParallaxBackgroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FEA8A3185BB2FC00D094C1 /* ParallaxBackgroundTests.m */; };
+		66FEA8AF185BB40200D094C1 /* PBParallaxBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FEA8AD185BB40200D094C1 /* PBParallaxBackground.m */; };
+		66FEA8B7185BBF5B00D094C1 /* pBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B1185BBF5B00D094C1 /* pBackground.png */; };
+		66FEA8B8185BBF5B00D094C1 /* pBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B2185BBF5B00D094C1 /* pBackground@2x.png */; };
+		66FEA8B9185BBF5B00D094C1 /* pForeground.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B3185BBF5B00D094C1 /* pForeground.png */; };
+		66FEA8BA185BBF5B00D094C1 /* pForeground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B4185BBF5B00D094C1 /* pForeground@2x.png */; };
+		66FEA8BB185BBF5B00D094C1 /* pMiddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B5185BBF5B00D094C1 /* pMiddle.png */; };
+		66FEA8BC185BBF5B00D094C1 /* pMiddle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B6185BBF5B00D094C1 /* pMiddle@2x.png */; };
+		66FEA8BD185BC58200D094C1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA885185BB2FC00D094C1 /* Main_iPad.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		66FEA89B185BB2FC00D094C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 66FEA863185BB2FC00D094C1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 66FEA86A185BB2FC00D094C1;
-			remoteInfo = ParallaxBackground;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		66FEA86B185BB2FC00D094C1 /* ParallaxBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxBackground.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,19 +39,24 @@
 		66FEA87E185BB2FC00D094C1 /* ParallaxBackground-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParallaxBackground-Prefix.pch"; sourceTree = "<group>"; };
 		66FEA87F185BB2FC00D094C1 /* PBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBAppDelegate.h; sourceTree = "<group>"; };
 		66FEA880185BB2FC00D094C1 /* PBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBAppDelegate.m; sourceTree = "<group>"; };
-		66FEA883185BB2FC00D094C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		66FEA886185BB2FC00D094C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		66FEA888185BB2FC00D094C1 /* PBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBViewController.h; sourceTree = "<group>"; };
 		66FEA889185BB2FC00D094C1 /* PBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBViewController.m; sourceTree = "<group>"; };
 		66FEA88B185BB2FC00D094C1 /* PBMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBMyScene.h; sourceTree = "<group>"; };
 		66FEA88C185BB2FC00D094C1 /* PBMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBMyScene.m; sourceTree = "<group>"; };
-		66FEA88E185BB2FC00D094C1 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		66FEA890185BB2FC00D094C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		66FEA896185BB2FC00D094C1 /* ParallaxBackgroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallaxBackgroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FEA897185BB2FC00D094C1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		66FEA89F185BB2FC00D094C1 /* ParallaxBackgroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParallaxBackgroundTests-Info.plist"; sourceTree = "<group>"; };
 		66FEA8A1185BB2FC00D094C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66FEA8A3185BB2FC00D094C1 /* ParallaxBackgroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParallaxBackgroundTests.m; sourceTree = "<group>"; };
+		66FEA8AD185BB40200D094C1 /* PBParallaxBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBParallaxBackground.m; sourceTree = "<group>"; };
+		66FEA8AE185BB40200D094C1 /* PBParallaxBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBParallaxBackground.h; sourceTree = "<group>"; };
+		66FEA8B1185BBF5B00D094C1 /* pBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pBackground.png; sourceTree = "<group>"; };
+		66FEA8B2185BBF5B00D094C1 /* pBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pBackground@2x.png"; sourceTree = "<group>"; };
+		66FEA8B3185BBF5B00D094C1 /* pForeground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pForeground.png; sourceTree = "<group>"; };
+		66FEA8B4185BBF5B00D094C1 /* pForeground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pForeground@2x.png"; sourceTree = "<group>"; };
+		66FEA8B5185BBF5B00D094C1 /* pMiddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pMiddle.png; sourceTree = "<group>"; };
+		66FEA8B6185BBF5B00D094C1 /* pMiddle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pMiddle@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,16 +68,6 @@
 				66FEA873185BB2FC00D094C1 /* UIKit.framework in Frameworks */,
 				66FEA875185BB2FC00D094C1 /* SpriteKit.framework in Frameworks */,
 				66FEA86F185BB2FC00D094C1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		66FEA893185BB2FC00D094C1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66FEA898185BB2FC00D094C1 /* XCTest.framework in Frameworks */,
-				66FEA89A185BB2FC00D094C1 /* UIKit.framework in Frameworks */,
-				66FEA899185BB2FC00D094C1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				66FEA86B185BB2FC00D094C1 /* ParallaxBackground.app */,
-				66FEA896185BB2FC00D094C1 /* ParallaxBackgroundTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,13 +109,13 @@
 			children = (
 				66FEA87F185BB2FC00D094C1 /* PBAppDelegate.h */,
 				66FEA880185BB2FC00D094C1 /* PBAppDelegate.m */,
-				66FEA882185BB2FC00D094C1 /* Main_iPhone.storyboard */,
 				66FEA885185BB2FC00D094C1 /* Main_iPad.storyboard */,
 				66FEA888185BB2FC00D094C1 /* PBViewController.h */,
 				66FEA889185BB2FC00D094C1 /* PBViewController.m */,
 				66FEA88B185BB2FC00D094C1 /* PBMyScene.h */,
 				66FEA88C185BB2FC00D094C1 /* PBMyScene.m */,
-				66FEA88E185BB2FC00D094C1 /* Spaceship.png */,
+				66FEA8AD185BB40200D094C1 /* PBParallaxBackground.m */,
+				66FEA8AE185BB40200D094C1 /* PBParallaxBackground.h */,
 				66FEA890185BB2FC00D094C1 /* Images.xcassets */,
 				66FEA877185BB2FC00D094C1 /* Supporting Files */,
 			);
@@ -141,6 +125,7 @@
 		66FEA877185BB2FC00D094C1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				66FEA8B0185BBF4B00D094C1 /* images */,
 				66FEA878185BB2FC00D094C1 /* ParallaxBackground-Info.plist */,
 				66FEA879185BB2FC00D094C1 /* InfoPlist.strings */,
 				66FEA87C185BB2FC00D094C1 /* main.m */,
@@ -167,6 +152,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		66FEA8B0185BBF4B00D094C1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				66FEA8B1185BBF5B00D094C1 /* pBackground.png */,
+				66FEA8B2185BBF5B00D094C1 /* pBackground@2x.png */,
+				66FEA8B3185BBF5B00D094C1 /* pForeground.png */,
+				66FEA8B4185BBF5B00D094C1 /* pForeground@2x.png */,
+				66FEA8B5185BBF5B00D094C1 /* pMiddle.png */,
+				66FEA8B6185BBF5B00D094C1 /* pMiddle@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,24 +185,6 @@
 			productReference = 66FEA86B185BB2FC00D094C1 /* ParallaxBackground.app */;
 			productType = "com.apple.product-type.application";
 		};
-		66FEA895185BB2FC00D094C1 /* ParallaxBackgroundTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 66FEA8AA185BB2FC00D094C1 /* Build configuration list for PBXNativeTarget "ParallaxBackgroundTests" */;
-			buildPhases = (
-				66FEA892185BB2FC00D094C1 /* Sources */,
-				66FEA893185BB2FC00D094C1 /* Frameworks */,
-				66FEA894185BB2FC00D094C1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				66FEA89C185BB2FC00D094C1 /* PBXTargetDependency */,
-			);
-			name = ParallaxBackgroundTests;
-			productName = ParallaxBackgroundTests;
-			productReference = 66FEA896185BB2FC00D094C1 /* ParallaxBackgroundTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -215,8 +195,8 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Ignacio Nieto Carvajal";
 				TargetAttributes = {
-					66FEA895185BB2FC00D094C1 = {
-						TestTargetID = 66FEA86A185BB2FC00D094C1;
+					66FEA86A185BB2FC00D094C1 = {
+						DevelopmentTeam = 97P9DZHP78;
 					};
 				};
 			};
@@ -234,7 +214,6 @@
 			projectRoot = "";
 			targets = (
 				66FEA86A185BB2FC00D094C1 /* ParallaxBackground */,
-				66FEA895185BB2FC00D094C1 /* ParallaxBackgroundTests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,19 +223,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66FEA88F185BB2FC00D094C1 /* Spaceship.png in Resources */,
+				66FEA8BD185BC58200D094C1 /* Main_iPad.storyboard in Resources */,
 				66FEA891185BB2FC00D094C1 /* Images.xcassets in Resources */,
-				66FEA887185BB2FC00D094C1 /* Main_iPad.storyboard in Resources */,
-				66FEA884185BB2FC00D094C1 /* Main_iPhone.storyboard in Resources */,
+				66FEA8B9185BBF5B00D094C1 /* pForeground.png in Resources */,
+				66FEA8BA185BBF5B00D094C1 /* pForeground@2x.png in Resources */,
+				66FEA8B7185BBF5B00D094C1 /* pBackground.png in Resources */,
+				66FEA8BB185BBF5B00D094C1 /* pMiddle.png in Resources */,
 				66FEA87B185BB2FC00D094C1 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		66FEA894185BB2FC00D094C1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66FEA8A2185BB2FC00D094C1 /* InfoPlist.strings in Resources */,
+				66FEA8B8185BBF5B00D094C1 /* pBackground@2x.png in Resources */,
+				66FEA8BC185BBF5B00D094C1 /* pMiddle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,26 +246,11 @@
 				66FEA881185BB2FC00D094C1 /* PBAppDelegate.m in Sources */,
 				66FEA88A185BB2FC00D094C1 /* PBViewController.m in Sources */,
 				66FEA87D185BB2FC00D094C1 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		66FEA892185BB2FC00D094C1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66FEA8A4185BB2FC00D094C1 /* ParallaxBackgroundTests.m in Sources */,
+				66FEA8AF185BB40200D094C1 /* PBParallaxBackground.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		66FEA89C185BB2FC00D094C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 66FEA86A185BB2FC00D094C1 /* ParallaxBackground */;
-			targetProxy = 66FEA89B185BB2FC00D094C1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		66FEA879185BB2FC00D094C1 /* InfoPlist.strings */ = {
@@ -299,14 +259,6 @@
 				66FEA87A185BB2FC00D094C1 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		66FEA882185BB2FC00D094C1 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				66FEA883185BB2FC00D094C1 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		66FEA885185BB2FC00D094C1 /* Main_iPad.storyboard */ = {
@@ -407,11 +359,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParallaxBackground/ParallaxBackground-Prefix.pch";
 				INFOPLIST_FILE = "ParallaxBackground/ParallaxBackground-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -421,54 +375,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParallaxBackground/ParallaxBackground-Prefix.pch";
 				INFOPLIST_FILE = "ParallaxBackground/ParallaxBackground-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		66FEA8AB185BB2FC00D094C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParallaxBackground.app/ParallaxBackground";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ParallaxBackground/ParallaxBackground-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ParallaxBackgroundTests/ParallaxBackgroundTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		66FEA8AC185BB2FC00D094C1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParallaxBackground.app/ParallaxBackground";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ParallaxBackground/ParallaxBackground-Prefix.pch";
-				INFOPLIST_FILE = "ParallaxBackgroundTests/ParallaxBackgroundTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -489,14 +403,6 @@
 			buildConfigurations = (
 				66FEA8A8185BB2FC00D094C1 /* Debug */,
 				66FEA8A9185BB2FC00D094C1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		66FEA8AA185BB2FC00D094C1 /* Build configuration list for PBXNativeTarget "ParallaxBackgroundTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				66FEA8AB185BB2FC00D094C1 /* Debug */,
-				66FEA8AC185BB2FC00D094C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
