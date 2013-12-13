@@ -1,4 +1,3 @@
-
 ParallaxBackground
 ==================
 
@@ -11,11 +10,12 @@ It is really easy to integrate the parallax background into your project. You ju
 
 You should initialize and insert the PBParallaxBackground in the scene initialization:
 
+```
 NSArray * imageNames = @[@"pForeground", @"pMiddle", @"pBackground"];
 PBParallaxBackground * parallax = [[PBParallaxBackground alloc] initWithBackgrounds:imageNames size:size direction:kPBParallaxBackgroundDirectionLeft fastestSpeed:kPBParallaxBackgroundDefaultSpeed andSpeedDecrease:kPBParallaxBackgroundDefaultSpeedDifferential];
 self.parallaxBackground = parallax;
 [self addChild:parallax];
-        
+```     
 You must supply the init with a NSArray of either images, NSStrings (containing the image names), SKSpriteNodes or SKTextures.
 "direction" represents the direction of the parallax movement, and can be either kPBParallaxBackgroundDirectionUp, kPBParallaxBackgroundDirectionDown, kPBParallaxBackgroundDirectionRight or kPBParallaxBackgroundDirectionLeft.
 the fastestSpeed refers to the speed of the fastest element. Nice values are between 1 and 4.
@@ -23,12 +23,14 @@ the speedDecrease is a number between 0 and 1. The bigger the speed decrease, th
 
 Then in your scene update method, you just need to call:
 
+```
 -(void)update:(CFTimeInterval)currentTime {
     ...
     [self.parallaxBackground update:currentTime];
 }
+```
 
-It is that simple. If you find it useful, please let me know. Cheers!
+It is that simple. If you find it useful, please let me know. Thanks!
 
 License
 =======
