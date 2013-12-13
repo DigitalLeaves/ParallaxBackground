@@ -50,7 +50,7 @@
 
 @implementation PBParallaxBackground
 
-- (id) initWithBackgrounds: (NSArray *) backgrounds size: (CGSize) size direction: (PBParallaxBackgroundDirection) direction fastestVelocity: (CGFloat) velocity andSpeedDecrease: (CGFloat) differential {
+- (id) initWithBackgrounds: (NSArray *) backgrounds size: (CGSize) size direction: (PBParallaxBackgroundDirection) direction fastestSpeed: (CGFloat) speed andSpeedDecrease: (CGFloat) differential {
     self = [super init];
     if (self) {
         // initialization
@@ -60,7 +60,7 @@
         self.zPosition = -100;
         
         // sanity checks
-        if (velocity < 0) velocity = -velocity;
+        if (speed < 0) speed = -speed;
         if (differential < 0 || differential > 1) differential = kPBParallaxBackgroundDefaultSpeedDifferential; // sanity check
 
         // initialize backgrounds
@@ -69,7 +69,7 @@
         NSMutableArray * bgs = [NSMutableArray array];
         NSMutableArray * cBgs = [NSMutableArray array];
         NSMutableArray * vels = [NSMutableArray array];
-        CGFloat currentVelocity = velocity;
+        CGFloat currentVelocity = speed;
         
         for (id obj in backgrounds) {
             // determine the type of background

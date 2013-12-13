@@ -45,7 +45,7 @@ typedef enum {
  * @param velocity the velocity of the fastest (= nearest) backgound.
  * @param differential a differential decrease to be applied to each following background, expressed as a float from 0 (every background moves at the same speed) to 1 (each backgrounds moves at half the speed of the previous (=closer) one).
  */
-- (id) initWithBackgrounds: (NSArray *) backgrounds size: (CGSize) size direction: (PBParallaxBackgroundDirection) direction fastestVelocity: (CGFloat) velocity andSpeedDecrease: (CGFloat) differential;
+- (id) initWithBackgrounds: (NSArray *) backgrounds size: (CGSize) size direction: (PBParallaxBackgroundDirection) direction fastestSpeed: (CGFloat) speed andSpeedDecrease: (CGFloat) differential;
 
 /** This method, called once in every game loop, will adjust the relative position of the nodes in the parallax background set */
 - (void) update: (NSTimeInterval) currentTime;
