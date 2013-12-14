@@ -137,8 +137,8 @@
 
 - (void) update:(NSTimeInterval)currentTime {
     for (NSUInteger i = 0; i < self.numberOfBackgrounds; i++) {
-        // determine the velocity of each node
-        CGFloat velocity = [[self.speeds objectAtIndex:i] floatValue];
+        // determine the speed of each node
+        CGFloat speed = [[self.speeds objectAtIndex:i] floatValue];
         
         // adjust positions
         SKSpriteNode * bg = [self.backgrounds objectAtIndex:i];
@@ -147,29 +147,29 @@
         // position depends on direction.
         switch (self.direction) {
             case kPBParallaxBackgroundDirectionUp:
-                newBgY += velocity;
-                newCbgY += velocity;
+                newBgY += speed;
+                newCbgY += speed;
                 if (newBgY >= (bg.size.height * 2)) newBgY = -(bg.size.height * 2);
                 if (newCbgY >= (cBg.size.height * 2)) newCbgY = -(cBg.size.height * 2);
 
                 break;
             case kPBParallaxBackgroundDirectionDown:
-                newBgY -= velocity;
-                newCbgY -= velocity;
+                newBgY -= speed;
+                newCbgY -= speed;
                 if (newBgY <= 0) newBgY += (bg.size.height * 2);
                 if (newCbgY <= 0) newCbgY += (cBg.size.height * 2);
 
                 break;
             case kPBParallaxBackgroundDirectionRight:
-                newBgX += velocity;
-                newCbgX += velocity;
+                newBgX += speed;
+                newCbgX += speed;
                 if (newBgX >= bg.size.width) newBgX -= 2*bg.size.width;
                 if (newCbgX >= cBg.size.width) newCbgX -= 2*cBg.size.width;
                 
                 break;
             case kPBParallaxBackgroundDirectionLeft:
-                newBgX -= velocity;
-                newCbgX -= velocity;
+                newBgX -= speed;
+                newCbgX -= speed;
                 if (newBgX <= -bg.size.width) newBgX += 2*bg.size.width;
                 if (newCbgX <= -cBg.size.width) newCbgX += 2*cBg.size.width;
                 
