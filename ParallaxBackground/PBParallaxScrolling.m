@@ -69,7 +69,7 @@
         NSMutableArray * bgs = [NSMutableArray array];
         NSMutableArray * cBgs = [NSMutableArray array];
         NSMutableArray * spds = [NSMutableArray array];
-        CGFloat currentVelocity = speed;
+        CGFloat currentSpeed = speed;
         
         for (id obj in backgrounds) {
             // determine the type of background
@@ -112,8 +112,8 @@
             [cBgs addObject:clonedNode];
             
             // add the velocity for this node and adjust the next current velocity.
-            [spds addObject:[NSNumber numberWithFloat:currentVelocity]];
-            currentVelocity = currentVelocity / (1 + differential);
+            [spds addObject:[NSNumber numberWithFloat:currentSpeed]];
+            currentSpeed = currentSpeed / (1 + differential);
             
             // add to the scene
             [self addChild:node];
