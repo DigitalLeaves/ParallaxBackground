@@ -120,7 +120,6 @@
             [self addChild:clonedNode];
             
             // next background
-            NSLog(@"%ld. Añadido background %@", (unsigned long)bgNumber, obj);
             bgNumber++;
         }
         // did we find some valid backgrounds?
