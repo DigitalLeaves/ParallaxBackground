@@ -16,7 +16,7 @@ PBParallaxBackground * parallax = [[PBParallaxBackground alloc] initWithBackgrou
 self.parallaxBackground = parallax;
 [self addChild:parallax];
 ```     
-you must specify a NSArray of either images, NSStrings (containing the image names), SKSpriteNodes or SKTextures.
+You must specify a NSArray of either images, NSStrings (containing valid image names included in the bundle), SKSpriteNodes or SKTextures.
 
 "direction" represents the direction of the parallax movement, and can be either kPBParallaxBackgroundDirectionUp, kPBParallaxBackgroundDirectionDown, kPBParallaxBackgroundDirectionRight or kPBParallaxBackgroundDirectionLeft.
 
