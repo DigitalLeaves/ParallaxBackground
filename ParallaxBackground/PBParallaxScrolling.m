@@ -24,9 +24,9 @@
 // THE SOFTWARE.
 //
 
-#import "PBParallaxBackground.h"
+#import "PBParallaxScrolling.h"
 
-@interface PBParallaxBackground ()
+@interface PBParallaxScrolling ()
 
 /** The array containing the set of SKSpriteNode nodes representing the different backgrounds */
 @property (nonatomic, strong) NSArray * backgrounds;
@@ -48,7 +48,7 @@
 
 @end
 
-@implementation PBParallaxBackground
+@implementation PBParallaxScrolling
 
 - (id) initWithBackgrounds: (NSArray *) backgrounds size: (CGSize) size direction: (PBParallaxBackgroundDirection) direction fastestSpeed: (CGFloat) speed andSpeedDecrease: (CGFloat) differential {
     self = [super init];

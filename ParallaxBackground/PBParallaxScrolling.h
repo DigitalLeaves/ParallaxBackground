@@ -36,7 +36,7 @@ typedef enum {
     kPBParallaxBackgroundDirectionLeft
 } PBParallaxBackgroundDirection;
 
-@interface PBParallaxBackground : SKSpriteNode
+@interface PBParallaxScrolling : SKSpriteNode
 
 /** @brief Designated initializer for the parallax backgorund. 
  * Creates and initializes a new parallax background of certain size, with some images, an initial velocity and a differential of this velocity to each background.

@@ -25,7 +25,7 @@
 // THE SOFTWARE.
 
 #import <SpriteKit/SpriteKit.h>
-#import "PBParallaxBackground.h"
+#import "PBParallaxScrolling.h"
 
 @interface PBMyScene : SKScene
 

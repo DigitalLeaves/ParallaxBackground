@@ -17,7 +17,7 @@
 		66FEA88A185BB2FC00D094C1 /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FEA889185BB2FC00D094C1 /* PBViewController.m */; };
 		66FEA88D185BB2FC00D094C1 /* PBMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FEA88C185BB2FC00D094C1 /* PBMyScene.m */; };
 		66FEA891185BB2FC00D094C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA890185BB2FC00D094C1 /* Images.xcassets */; };
-		66FEA8AF185BB40200D094C1 /* PBParallaxBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FEA8AD185BB40200D094C1 /* PBParallaxBackground.m */; };
+		66FEA8AF185BB40200D094C1 /* PBParallaxScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FEA8AD185BB40200D094C1 /* PBParallaxScrolling.m */; };
 		66FEA8B7185BBF5B00D094C1 /* pBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B1185BBF5B00D094C1 /* pBackground.png */; };
 		66FEA8B8185BBF5B00D094C1 /* pBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B2185BBF5B00D094C1 /* pBackground@2x.png */; };
 		66FEA8B9185BBF5B00D094C1 /* pForeground.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B3185BBF5B00D094C1 /* pForeground.png */; };
@@ -49,8 +49,8 @@
 		66FEA89F185BB2FC00D094C1 /* ParallaxBackgroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParallaxBackgroundTests-Info.plist"; sourceTree = "<group>"; };
 		66FEA8A1185BB2FC00D094C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66FEA8A3185BB2FC00D094C1 /* ParallaxBackgroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParallaxBackgroundTests.m; sourceTree = "<group>"; };
-		66FEA8AD185BB40200D094C1 /* PBParallaxBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBParallaxBackground.m; sourceTree = "<group>"; };
-		66FEA8AE185BB40200D094C1 /* PBParallaxBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBParallaxBackground.h; sourceTree = "<group>"; };
+		66FEA8AD185BB40200D094C1 /* PBParallaxScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBParallaxScrolling.m; sourceTree = "<group>"; };
+		66FEA8AE185BB40200D094C1 /* PBParallaxScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBParallaxScrolling.h; sourceTree = "<group>"; };
 		66FEA8B1185BBF5B00D094C1 /* pBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pBackground.png; sourceTree = "<group>"; };
 		66FEA8B2185BBF5B00D094C1 /* pBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pBackground@2x.png"; sourceTree = "<group>"; };
 		66FEA8B3185BBF5B00D094C1 /* pForeground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pForeground.png; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 				66FEA889185BB2FC00D094C1 /* PBViewController.m */,
 				66FEA88B185BB2FC00D094C1 /* PBMyScene.h */,
 				66FEA88C185BB2FC00D094C1 /* PBMyScene.m */,
-				66FEA8AD185BB40200D094C1 /* PBParallaxBackground.m */,
-				66FEA8AE185BB40200D094C1 /* PBParallaxBackground.h */,
+				66FEA8AD185BB40200D094C1 /* PBParallaxScrolling.m */,
+				66FEA8AE185BB40200D094C1 /* PBParallaxScrolling.h */,
 				66FEA890185BB2FC00D094C1 /* Images.xcassets */,
 				66FEA877185BB2FC00D094C1 /* Supporting Files */,
 			);
@@ -246,7 +246,7 @@
 				66FEA881185BB2FC00D094C1 /* PBAppDelegate.m in Sources */,
 				66FEA88A185BB2FC00D094C1 /* PBViewController.m in Sources */,
 				66FEA87D185BB2FC00D094C1 /* main.m in Sources */,
-				66FEA8AF185BB40200D094C1 /* PBParallaxBackground.m in Sources */,
+				66FEA8AF185BB40200D094C1 /* PBParallaxScrolling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
