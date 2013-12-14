@@ -34,8 +34,8 @@
 /** The array containing the set of duplicated background nodes that will appear when the background starts sliding out of the screen */
 @property (nonatomic, strong) NSArray * clonedBackgrounds;
 
-/** The array of velocities for every background */
-@property (nonatomic, strong) NSArray * velocities;
+/** The array of speeds for every background */
+@property (nonatomic, strong) NSArray * speeds;
 
 /** Number of backgrounds in this parallax background set */
 @property (nonatomic) NSUInteger numberOfBackgrounds;
@@ -128,7 +128,7 @@
             self.numberOfBackgrounds = bgNumber;
             self.backgrounds = [bgs copy];
             self.clonedBackgrounds = [cBgs copy];
-            self.velocities = [vels copy];
+            self.speeds = [vels copy];
         } else { NSLog(@"Unable to find any valid backgrounds for parallax scrolling."); return nil; }
 
     }
@@ -139,7 +139,7 @@
 - (void) update:(NSTimeInterval)currentTime {
     for (NSUInteger i = 0; i < self.numberOfBackgrounds; i++) {
         // determine the velocity of each node
-        CGFloat velocity = [[self.velocities objectAtIndex:i] floatValue];
+        CGFloat velocity = [[self.speeds objectAtIndex:i] floatValue];
         
         // adjust positions
         SKSpriteNode * bg = [self.backgrounds objectAtIndex:i];
