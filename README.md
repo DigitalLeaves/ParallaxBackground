@@ -1,7 +1,7 @@
 ParallaxBackground
 ==================
 
-ParallaxBackground allows you to integrate a parallax background effect in your SpriteKit games.
+ParallaxBackground allows you to integrate a parallax scrolling effect in your SpriteKit games.
 
 Usage
 =====
