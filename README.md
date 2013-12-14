@@ -16,9 +16,12 @@ PBParallaxBackground * parallax = [[PBParallaxBackground alloc] initWithBackgrou
 self.parallaxBackground = parallax;
 [self addChild:parallax];
 ```     
-You must supply the init with a NSArray of either images, NSStrings (containing the image names), SKSpriteNodes or SKTextures.
+you must specify a NSArray of either images, NSStrings (containing the image names), SKSpriteNodes or SKTextures.
+
 "direction" represents the direction of the parallax movement, and can be either kPBParallaxBackgroundDirectionUp, kPBParallaxBackgroundDirectionDown, kPBParallaxBackgroundDirectionRight or kPBParallaxBackgroundDirectionLeft.
+
 the fastestSpeed refers to the speed of the fastest element. Nice values are between 1 and 4.
+
 the speedDecrease is a number between 0 and 1. The bigger the speed decrease, the slower each layer of the parallax will go. A speed decrease of 0 means no speed decrease (i.e: all layers will move at the same speed) whereas a speed decrease of 1 means that every layer will move at half the speed of the immediatly faster layer.
 
 Then in your scene update method, you just need to call:
