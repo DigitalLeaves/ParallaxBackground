@@ -68,7 +68,7 @@
         NSUInteger bgNumber = 0;
         NSMutableArray * bgs = [NSMutableArray array];
         NSMutableArray * cBgs = [NSMutableArray array];
-        NSMutableArray * vels = [NSMutableArray array];
+        NSMutableArray * spds = [NSMutableArray array];
         CGFloat currentVelocity = speed;
         
         for (id obj in backgrounds) {
@@ -112,7 +112,7 @@
             [cBgs addObject:clonedNode];
             
             // add the velocity for this node and adjust the next current velocity.
-            [vels addObject:[NSNumber numberWithFloat:currentVelocity]];
+            [spds addObject:[NSNumber numberWithFloat:currentVelocity]];
             currentVelocity = currentVelocity / (1 + differential);
             
             // add to the scene
@@ -127,7 +127,7 @@
             self.numberOfBackgrounds = bgNumber;
             self.backgrounds = [bgs copy];
             self.clonedBackgrounds = [cBgs copy];
-            self.speeds = [vels copy];
+            self.speeds = [spds copy];
         } else { NSLog(@"Unable to find any valid backgrounds for parallax scrolling."); return nil; }
 
     }
