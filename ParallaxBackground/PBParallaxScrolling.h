@@ -50,4 +50,9 @@ typedef enum {
 /** This method, called once in every game loop, will adjust the relative position of the nodes in the parallax background set */
 - (void) update: (NSTimeInterval) currentTime;
 
+/** reverse the direction of the movement, left->right, right->left, up->down, down->up */
+- (void) reverseMovementDirection;
+
+/** Debug method for watching the positions of the backgrounds at a given time. */
+- (void) showBackgroundPositions;
 @end

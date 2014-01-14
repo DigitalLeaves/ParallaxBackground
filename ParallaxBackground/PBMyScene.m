@@ -50,6 +50,7 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
+    [self.parallaxBackground reverseMovementDirection];
 }
 
 -(void)update:(CFTimeInterval)currentTime {

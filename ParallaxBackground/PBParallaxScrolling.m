@@ -26,6 +26,10 @@
 
 #import "PBParallaxScrolling.h"
 
+#define kParallaxBackgroundAntiFlickeringAdjustment 0.05
+
+static inline CGFloat roundFloatToTwoDecimalPlaces(CGFloat num) { return floorf(num * 100 + 0.5) / 100; }
+
 @interface PBParallaxScrolling ()
 
 /** The array containing the set of SKSpriteNode nodes representing the different backgrounds */
@@ -69,7 +73,7 @@
         NSMutableArray * bgs = [NSMutableArray array];
         NSMutableArray * cBgs = [NSMutableArray array];
         NSMutableArray * spds = [NSMutableArray array];
-        CGFloat currentSpeed = speed;
+        CGFloat currentSpeed = roundFloatToTwoDecimalPlaces(speed);
         
         for (id obj in backgrounds) {
             // determine the type of background
@@ -113,7 +117,7 @@
             
             // add the velocity for this node and adjust the next current velocity.
             [spds addObject:[NSNumber numberWithFloat:currentSpeed]];
-            currentSpeed = currentSpeed / (1 + differential);
+            currentSpeed = roundFloatToTwoDecimalPlaces(currentSpeed / (1 + differential));
             
             // add to the scene
             [self addChild:node];
@@ -149,30 +153,29 @@
             case kPBParallaxBackgroundDirectionUp:
                 newBgY += speed;
                 newCbgY += speed;
-                if (newBgY >= (bg.size.height * 2)) newBgY = -(bg.size.height * 2);
-                if (newCbgY >= (cBg.size.height * 2)) newCbgY = -(cBg.size.height * 2);
+                if (newBgY >= (bg.size.height * 2)) newBgY = newCbgY - cBg.size.height;
+                if (newCbgY >= (cBg.size.height * 2)) newCbgY = newBgY - bg.size.height;
 
                 break;
             case kPBParallaxBackgroundDirectionDown:
                 newBgY -= speed;
                 newCbgY -= speed;
-                if (newBgY <= 0) newBgY += (bg.size.height * 2);
-                if (newCbgY <= 0) newCbgY += (cBg.size.height * 2);
+                if (newBgY <= 0) newBgY = newCbgY + cBg.size.height;
+                if (newCbgY <= 0) newCbgY = newBgY + bg.size.height;
 
                 break;
             case kPBParallaxBackgroundDirectionRight:
                 newBgX += speed;
                 newCbgX += speed;
-                if (newBgX >= bg.size.width) newBgX -= 2*bg.size.width;
-                if (newCbgX >= cBg.size.width) newCbgX -= 2*cBg.size.width;
+                if (newBgX >= bg.size.width) newBgX = newCbgX - cBg.size.width;
+                if (newCbgX >= cBg.size.width) newCbgX =  newBgX - bg.size.width;
                 
                 break;
             case kPBParallaxBackgroundDirectionLeft:
-                newBgX -= speed;
-                newCbgX -= speed;
-                if (newBgX <= -bg.size.width) newBgX += 2*bg.size.width;
-                if (newCbgX <= -cBg.size.width) newCbgX += 2*cBg.size.width;
-                
+                newBgX = newBgX - speed;
+                newCbgX = newCbgX - speed;
+                if (newBgX <= -bg.size.width) newBgX = newCbgX + cBg.size.width - kParallaxBackgroundAntiFlickeringAdjustment;
+                if (newCbgX <= -cBg.size.width) newCbgX = newBgX + bg.size.width - kParallaxBackgroundAntiFlickeringAdjustment;
                 break;
             default:
                 break;
@@ -181,6 +184,45 @@
         bg.position = CGPointMake(newBgX, newBgY);
         cBg.position = CGPointMake(newCbgX, newCbgY);
 
+    }
+}
+
+- (void) reverseMovementDirection {
+    PBParallaxBackgroundDirection newDirection = self.direction;
+    switch (self.direction) {
+        case kPBParallaxBackgroundDirectionDown:
+            newDirection = kPBParallaxBackgroundDirectionUp;
+            break;
+            
+        case kPBParallaxBackgroundDirectionUp:
+            newDirection = kPBParallaxBackgroundDirectionDown;
+            break;
+            
+        case kPBParallaxBackgroundDirectionLeft:
+            newDirection = kPBParallaxBackgroundDirectionRight;
+            break;
+            
+        case kPBParallaxBackgroundDirectionRight:
+            newDirection = kPBParallaxBackgroundDirectionLeft;
+            break;
+            
+        default:
+            break;
+    }
+    self.direction = newDirection;
+}
+
+- (void) showBackgroundPositions {
+    NSLog(@"Parallax background state:");
+    for (NSUInteger i = 0; i < self.numberOfBackgrounds; i++) {
+        // determine the speed of each node
+        CGFloat speed = [[self.speeds objectAtIndex:i] floatValue];
+        
+        // adjust positions
+        SKSpriteNode * bg = [self.backgrounds objectAtIndex:i];
+        SKSpriteNode * cBg = [self.clonedBackgrounds objectAtIndex:i];
+        NSLog(@"Layer %u: background1 at (%f, %f), background2 at (%f, %f), speed: %f", i, bg.position.x,bg.position.y, cBg.position.x, cBg.position.y, speed);
+ 
     }
 }
 
