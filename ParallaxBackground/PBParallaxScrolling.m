@@ -153,22 +153,22 @@ static inline CGFloat roundFloatToTwoDecimalPlaces(CGFloat num) { return floorf(
             case kPBParallaxBackgroundDirectionUp:
                 newBgY += speed;
                 newCbgY += speed;
-                if (newBgY >= (bg.size.height * 2)) newBgY = newCbgY - cBg.size.height;
-                if (newCbgY >= (cBg.size.height * 2)) newCbgY = newBgY - bg.size.height;
+                if (newBgY >= (bg.size.height * 2)) newBgY = newCbgY - cBg.size.height + kParallaxBackgroundAntiFlickeringAdjustment;
+                if (newCbgY >= (cBg.size.height * 2)) newCbgY = newBgY - bg.size.height + kParallaxBackgroundAntiFlickeringAdjustment;
 
                 break;
             case kPBParallaxBackgroundDirectionDown:
                 newBgY -= speed;
                 newCbgY -= speed;
-                if (newBgY <= 0) newBgY = newCbgY + cBg.size.height;
-                if (newCbgY <= 0) newCbgY = newBgY + bg.size.height;
+                if (newBgY <= 0) newBgY = newCbgY + cBg.size.height - kParallaxBackgroundAntiFlickeringAdjustment;
+                if (newCbgY <= 0) newCbgY = newBgY + bg.size.height - kParallaxBackgroundAntiFlickeringAdjustment;
 
                 break;
             case kPBParallaxBackgroundDirectionRight:
                 newBgX += speed;
                 newCbgX += speed;
-                if (newBgX >= bg.size.width) newBgX = newCbgX - cBg.size.width;
-                if (newCbgX >= cBg.size.width) newCbgX =  newBgX - bg.size.width;
+                if (newBgX >= bg.size.width) newBgX = newCbgX - cBg.size.width + kParallaxBackgroundAntiFlickeringAdjustment;
+                if (newCbgX >= cBg.size.width) newCbgX =  newBgX - bg.size.width + kParallaxBackgroundAntiFlickeringAdjustment;
                 
                 break;
             case kPBParallaxBackgroundDirectionLeft:
