@@ -35,6 +35,18 @@ Then in your scene update method, you just need to call:
 
 It is that simple. If you find it useful, please let me know. Thanks!
 
+Reverse the movement's direction
+================================
+
+Now there is a quick and fancy way to reverse the movement, which can be really
+interesting for a game. You just need to invoke:
+
+```
+[self.parallaxBackground reverseMovementDirection];
+```
+
+And it will reverse the parallax scrollin (from left to right, from right to left, from up to down or from down to up). It has been implemented in the touchesBegan method of the scene for testing purposes, so you just have to touch the iPad or iPhone to change the direction.
+
 License
 =======
 
