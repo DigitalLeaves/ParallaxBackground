@@ -3,6 +3,8 @@ ParallaxBackground
 
 ParallaxBackground allows you to integrate a parallax scrolling effect in your SpriteKit games.
 
+![Parallax Scrolling](http://digitalleaves.com/blog/wp-content/uploads/2014/04/newVersionOfPB.jpg)
+
 Usage
 =====
 
