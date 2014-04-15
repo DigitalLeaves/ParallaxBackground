@@ -26,7 +26,10 @@
 
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
+#import "PBMyScene.h"
 
 @interface PBViewController : UIViewController
+
+@property (nonatomic) PBParallaxBackgroundDirection direction;
 
 @end

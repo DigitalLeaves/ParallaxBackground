@@ -35,13 +35,17 @@
 
 @implementation PBMyScene
 
--(id)initWithSize:(CGSize)size {    
+-(id)initWithSize:(CGSize)size andDirection: (PBParallaxBackgroundDirection) direction {
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
         self.scaleMode = SKSceneScaleModeAspectFit;
-        NSArray * imageNames = @[@"pForeground", @"pMiddle", @"pBackground"];
-        PBParallaxScrolling * parallax = [[PBParallaxScrolling alloc] initWithBackgrounds:imageNames size:size direction:kPBParallaxBackgroundDirectionLeft fastestSpeed:kPBParallaxBackgroundDefaultSpeed andSpeedDecrease:kPBParallaxBackgroundDefaultSpeedDifferential];
+        self.direction = direction;
+        NSArray * imageNames;
+        if (direction == kPBParallaxBackgroundDirectionLeft || direction == kPBParallaxBackgroundDirectionRight)
+            imageNames= @[@"pForegroundHorizontal", @"pMiddleHorizontal", @"pBackgroundHorizontal"];
+        else imageNames= @[@"pForegroundVertical", @"pMiddleVertical", @"pBackgroundVertical"];
+        PBParallaxScrolling * parallax = [[PBParallaxScrolling alloc] initWithBackgrounds:imageNames size:size direction:direction fastestSpeed:kPBParallaxBackgroundDefaultSpeed andSpeedDecrease:kPBParallaxBackgroundDefaultSpeedDifferential];
         self.parallaxBackground = parallax;
         [self addChild:parallax];
     }

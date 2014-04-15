@@ -25,13 +25,23 @@
 // THE SOFTWARE.
 
 #import "PBViewController.h"
-#import "PBMyScene.h"
+
+@interface PBViewController ()
+
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+
+@end
 
 @implementation PBViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    SKView * skView = (SKView *) self.view;
+    if ([skView.scene isKindOfClass:[PBMyScene class]]) {
+        PBMyScene * pbms = (PBMyScene *) skView.scene;
+        pbms.direction = self.direction;
+    }
 
 }
 
@@ -46,7 +56,7 @@
         skView.showsNodeCount = YES;
         
         // Create and configure the scene.
-        SKScene * scene = [[PBMyScene alloc] initWithSize:skView.bounds.size];
+        SKScene * scene = [[PBMyScene alloc] initWithSize:skView.bounds.size andDirection:self.direction];
         scene.scaleMode = SKSceneScaleModeAspectFill;
         
         // Present the scene.
@@ -61,11 +71,9 @@
 
 - (NSUInteger)supportedInterfaceOrientations
 {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return UIInterfaceOrientationMaskAllButUpsideDown;
-    } else {
-        return UIInterfaceOrientationMaskAll;
-    }
+    if (self.direction == kPBParallaxBackgroundDirectionRight || self.direction == kPBParallaxBackgroundDirectionLeft) {
+        return UIInterfaceOrientationMaskLandscape;
+    } else return UIInterfaceOrientationMaskPortrait;
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,5 +81,12 @@
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
+
+#pragma mark button actions
+
+- (IBAction)backButtonTouched:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 @end

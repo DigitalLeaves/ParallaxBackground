@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66A365E918FD2F0F0083EE3F /* PBChooseOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A365E818FD2F0F0083EE3F /* PBChooseOrientationViewController.m */; };
+		66A365F618FD389A0083EE3F /* pBackgroundHorizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A365EA18FD389A0083EE3F /* pBackgroundHorizontal.png */; };
+		66A365F718FD389A0083EE3F /* pBackgroundHorizontal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A365EB18FD389A0083EE3F /* pBackgroundHorizontal@2x.png */; };
+		66A365F818FD389A0083EE3F /* pBackgroundVertical.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A365EC18FD389A0083EE3F /* pBackgroundVertical.png */; };
+		66A365F918FD389A0083EE3F /* pBackgroundVertical@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A365ED18FD389A0083EE3F /* pBackgroundVertical@2x.png */; };
+		66A365FA18FD389A0083EE3F /* pForegroundHorizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A365EE18FD389A0083EE3F /* pForegroundHorizontal.png */; };
+		66A365FB18FD389A0083EE3F /* pForegroundHorizontal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A365EF18FD389A0083EE3F /* pForegroundHorizontal@2x.png */; };
+		66A365FC18FD389A0083EE3F /* pForegroundVertical.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A365F018FD389A0083EE3F /* pForegroundVertical.png */; };
+		66A365FD18FD389A0083EE3F /* pForegroundVertical@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A365F118FD389A0083EE3F /* pForegroundVertical@2x.png */; };
+		66A365FE18FD389A0083EE3F /* pMiddleHorizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A365F218FD389A0083EE3F /* pMiddleHorizontal.png */; };
+		66A365FF18FD389A0083EE3F /* pMiddleHorizontal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A365F318FD389A0083EE3F /* pMiddleHorizontal@2x.png */; };
+		66A3660018FD389A0083EE3F /* pMiddleVertical.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A365F418FD389A0083EE3F /* pMiddleVertical.png */; };
+		66A3660118FD389A0083EE3F /* pMiddleVertical@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A365F518FD389A0083EE3F /* pMiddleVertical@2x.png */; };
 		66FEA86F185BB2FC00D094C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FEA86E185BB2FC00D094C1 /* Foundation.framework */; };
 		66FEA871185BB2FC00D094C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FEA870185BB2FC00D094C1 /* CoreGraphics.framework */; };
 		66FEA873185BB2FC00D094C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FEA872185BB2FC00D094C1 /* UIKit.framework */; };
@@ -18,16 +31,24 @@
 		66FEA88D185BB2FC00D094C1 /* PBMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FEA88C185BB2FC00D094C1 /* PBMyScene.m */; };
 		66FEA891185BB2FC00D094C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA890185BB2FC00D094C1 /* Images.xcassets */; };
 		66FEA8AF185BB40200D094C1 /* PBParallaxScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FEA8AD185BB40200D094C1 /* PBParallaxScrolling.m */; };
-		66FEA8B7185BBF5B00D094C1 /* pBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B1185BBF5B00D094C1 /* pBackground.png */; };
-		66FEA8B8185BBF5B00D094C1 /* pBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B2185BBF5B00D094C1 /* pBackground@2x.png */; };
-		66FEA8B9185BBF5B00D094C1 /* pForeground.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B3185BBF5B00D094C1 /* pForeground.png */; };
-		66FEA8BA185BBF5B00D094C1 /* pForeground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B4185BBF5B00D094C1 /* pForeground@2x.png */; };
-		66FEA8BB185BBF5B00D094C1 /* pMiddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B5185BBF5B00D094C1 /* pMiddle.png */; };
-		66FEA8BC185BBF5B00D094C1 /* pMiddle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA8B6185BBF5B00D094C1 /* pMiddle@2x.png */; };
 		66FEA8BD185BC58200D094C1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FEA885185BB2FC00D094C1 /* Main_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66A365E718FD2F0F0083EE3F /* PBChooseOrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBChooseOrientationViewController.h; sourceTree = "<group>"; };
+		66A365E818FD2F0F0083EE3F /* PBChooseOrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBChooseOrientationViewController.m; sourceTree = "<group>"; };
+		66A365EA18FD389A0083EE3F /* pBackgroundHorizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pBackgroundHorizontal.png; sourceTree = "<group>"; };
+		66A365EB18FD389A0083EE3F /* pBackgroundHorizontal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pBackgroundHorizontal@2x.png"; sourceTree = "<group>"; };
+		66A365EC18FD389A0083EE3F /* pBackgroundVertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pBackgroundVertical.png; sourceTree = "<group>"; };
+		66A365ED18FD389A0083EE3F /* pBackgroundVertical@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pBackgroundVertical@2x.png"; sourceTree = "<group>"; };
+		66A365EE18FD389A0083EE3F /* pForegroundHorizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pForegroundHorizontal.png; sourceTree = "<group>"; };
+		66A365EF18FD389A0083EE3F /* pForegroundHorizontal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pForegroundHorizontal@2x.png"; sourceTree = "<group>"; };
+		66A365F018FD389A0083EE3F /* pForegroundVertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pForegroundVertical.png; sourceTree = "<group>"; };
+		66A365F118FD389A0083EE3F /* pForegroundVertical@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pForegroundVertical@2x.png"; sourceTree = "<group>"; };
+		66A365F218FD389A0083EE3F /* pMiddleHorizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pMiddleHorizontal.png; sourceTree = "<group>"; };
+		66A365F318FD389A0083EE3F /* pMiddleHorizontal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pMiddleHorizontal@2x.png"; sourceTree = "<group>"; };
+		66A365F418FD389A0083EE3F /* pMiddleVertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pMiddleVertical.png; sourceTree = "<group>"; };
+		66A365F518FD389A0083EE3F /* pMiddleVertical@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pMiddleVertical@2x.png"; sourceTree = "<group>"; };
 		66FEA86B185BB2FC00D094C1 /* ParallaxBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxBackground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FEA86E185BB2FC00D094C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		66FEA870185BB2FC00D094C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,12 +72,6 @@
 		66FEA8A3185BB2FC00D094C1 /* ParallaxBackgroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParallaxBackgroundTests.m; sourceTree = "<group>"; };
 		66FEA8AD185BB40200D094C1 /* PBParallaxScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBParallaxScrolling.m; sourceTree = "<group>"; };
 		66FEA8AE185BB40200D094C1 /* PBParallaxScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBParallaxScrolling.h; sourceTree = "<group>"; };
-		66FEA8B1185BBF5B00D094C1 /* pBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pBackground.png; sourceTree = "<group>"; };
-		66FEA8B2185BBF5B00D094C1 /* pBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pBackground@2x.png"; sourceTree = "<group>"; };
-		66FEA8B3185BBF5B00D094C1 /* pForeground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pForeground.png; sourceTree = "<group>"; };
-		66FEA8B4185BBF5B00D094C1 /* pForeground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pForeground@2x.png"; sourceTree = "<group>"; };
-		66FEA8B5185BBF5B00D094C1 /* pMiddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pMiddle.png; sourceTree = "<group>"; };
-		66FEA8B6185BBF5B00D094C1 /* pMiddle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pMiddle@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +133,8 @@
 				66FEA8AE185BB40200D094C1 /* PBParallaxScrolling.h */,
 				66FEA890185BB2FC00D094C1 /* Images.xcassets */,
 				66FEA877185BB2FC00D094C1 /* Supporting Files */,
+				66A365E718FD2F0F0083EE3F /* PBChooseOrientationViewController.h */,
+				66A365E818FD2F0F0083EE3F /* PBChooseOrientationViewController.m */,
 			);
 			path = ParallaxBackground;
 			sourceTree = "<group>";
@@ -155,12 +172,18 @@
 		66FEA8B0185BBF4B00D094C1 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				66FEA8B1185BBF5B00D094C1 /* pBackground.png */,
-				66FEA8B2185BBF5B00D094C1 /* pBackground@2x.png */,
-				66FEA8B3185BBF5B00D094C1 /* pForeground.png */,
-				66FEA8B4185BBF5B00D094C1 /* pForeground@2x.png */,
-				66FEA8B5185BBF5B00D094C1 /* pMiddle.png */,
-				66FEA8B6185BBF5B00D094C1 /* pMiddle@2x.png */,
+				66A365EA18FD389A0083EE3F /* pBackgroundHorizontal.png */,
+				66A365EB18FD389A0083EE3F /* pBackgroundHorizontal@2x.png */,
+				66A365EC18FD389A0083EE3F /* pBackgroundVertical.png */,
+				66A365ED18FD389A0083EE3F /* pBackgroundVertical@2x.png */,
+				66A365EE18FD389A0083EE3F /* pForegroundHorizontal.png */,
+				66A365EF18FD389A0083EE3F /* pForegroundHorizontal@2x.png */,
+				66A365F018FD389A0083EE3F /* pForegroundVertical.png */,
+				66A365F118FD389A0083EE3F /* pForegroundVertical@2x.png */,
+				66A365F218FD389A0083EE3F /* pMiddleHorizontal.png */,
+				66A365F318FD389A0083EE3F /* pMiddleHorizontal@2x.png */,
+				66A365F418FD389A0083EE3F /* pMiddleVertical.png */,
+				66A365F518FD389A0083EE3F /* pMiddleVertical@2x.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -224,14 +247,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				66FEA8BD185BC58200D094C1 /* Main_iPad.storyboard in Resources */,
+				66A365FE18FD389A0083EE3F /* pMiddleHorizontal.png in Resources */,
+				66A365FA18FD389A0083EE3F /* pForegroundHorizontal.png in Resources */,
+				66A365F718FD389A0083EE3F /* pBackgroundHorizontal@2x.png in Resources */,
+				66A365F818FD389A0083EE3F /* pBackgroundVertical.png in Resources */,
+				66A365F918FD389A0083EE3F /* pBackgroundVertical@2x.png in Resources */,
+				66A365FC18FD389A0083EE3F /* pForegroundVertical.png in Resources */,
+				66A3660018FD389A0083EE3F /* pMiddleVertical.png in Resources */,
+				66A365FD18FD389A0083EE3F /* pForegroundVertical@2x.png in Resources */,
 				66FEA891185BB2FC00D094C1 /* Images.xcassets in Resources */,
-				66FEA8B9185BBF5B00D094C1 /* pForeground.png in Resources */,
-				66FEA8BA185BBF5B00D094C1 /* pForeground@2x.png in Resources */,
-				66FEA8B7185BBF5B00D094C1 /* pBackground.png in Resources */,
-				66FEA8BB185BBF5B00D094C1 /* pMiddle.png in Resources */,
+				66A365F618FD389A0083EE3F /* pBackgroundHorizontal.png in Resources */,
 				66FEA87B185BB2FC00D094C1 /* InfoPlist.strings in Resources */,
-				66FEA8B8185BBF5B00D094C1 /* pBackground@2x.png in Resources */,
-				66FEA8BC185BBF5B00D094C1 /* pMiddle@2x.png in Resources */,
+				66A3660118FD389A0083EE3F /* pMiddleVertical@2x.png in Resources */,
+				66A365FF18FD389A0083EE3F /* pMiddleHorizontal@2x.png in Resources */,
+				66A365FB18FD389A0083EE3F /* pForegroundHorizontal@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +273,7 @@
 			files = (
 				66FEA88D185BB2FC00D094C1 /* PBMyScene.m in Sources */,
 				66FEA881185BB2FC00D094C1 /* PBAppDelegate.m in Sources */,
+				66A365E918FD2F0F0083EE3F /* PBChooseOrientationViewController.m in Sources */,
 				66FEA88A185BB2FC00D094C1 /* PBViewController.m in Sources */,
 				66FEA87D185BB2FC00D094C1 /* main.m in Sources */,
 				66FEA8AF185BB40200D094C1 /* PBParallaxScrolling.m in Sources */,
@@ -405,6 +435,7 @@
 				66FEA8A9185BB2FC00D094C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
